@@ -1,0 +1,32 @@
+{{ define "main" }}
+<section>
+  <header>
+    <h1>Short Lessons Learned</h1>
+    <p>The little things I wish I knew earlier...</p>
+  </header>
+  <nav>
+    <ul id="list">
+      {{ range .Data.Pages.ByDate.Reverse }}
+        {{ if in .Params.tags "short" }}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  </nav>
+</section>
+<section>
+  <header>
+    <h1>Longer Thoughts and Experiments</h1>
+  </header>
+  <nav>
+    <ul id="list">
+      {{ range .Data.Pages.ByDate.Reverse }}
+        {{ if in .Params.tags "short" }}
+        {{ else }}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  </nav>
+</section>
+{{ end }}

@@ -1,0 +1,15 @@
+baseURL = "https://swampcastle.org/"
+languageCode = "en-us"
+title = "Swamp Castle"
+
+[pygments]
+pygmentsuseclasses = true
+pygmentsStyle = "vs"
+
+[blackfriday]
+smartypants = false
+
+[outputFormats]
+[outputFormats.RSS]
+mediatype = "application/rss"
+baseName = "feed"
