@@ -13,7 +13,7 @@ to imagine yourself in their shoes.
 
 When you're writing an error log message, you're not writing it for yourself.
 You're writing it for the poor sap who has to fix things when they break on a
-Saturday afternoon, four years after you wrote it and two years after you left
+Saturday night, four years after you wrote it and two years after you left
 the company. That log message is your saving throw into the future, with the
 potential to save someone hours of work.
 
@@ -46,7 +46,7 @@ logging.error("Failed to create enrollment.")
 ```
 
 It's really easy to write code like this without thinking about it. Some
-condition fails, you catch an exception, and then you log. But there's no
+condition fails, you catch a local exception, and then you log. But there's no
 context here, and it's difficult to know where to start debugging the problem.
 
 ```python

@@ -63,8 +63,7 @@ to send that data directly from the [page cache](https://en.wikipedia.org/wiki/P
 to the network buffer without ever copying anything to user space.
 
 This [clever design](https://kafka.apache.org/08/design.html) allows them to
-[scale up](https://engineering.linkedin.com/kafka/benchmarking-apache-kafka-2-million-writes-second-three-cheap-machines)
-to millions of messages per second across a few cheap machines. It lets
+scale up to millions of messages per second across [a few cheap machines](https://engineering.linkedin.com/kafka/benchmarking-apache-kafka-2-million-writes-second-three-cheap-machines). It lets
 clients replay events, and it removes a lot of complexity from the core server
 code.
 

@@ -3,8 +3,9 @@ languageCode = "en-us"
 title = "Swamp Castle"
 
 [pygments]
-pygmentsuseclasses = true
-pygmentsStyle = "vs"
+pygmentsuseclasses = false
+pygmentsstyle = "vs"
+PygmentsCodeFences = true
 
 [blackfriday]
 smartypants = false
