@@ -8,7 +8,7 @@
     </p>
   </header>
   <nav>
-    <ul id="list">
+    <ul id="short-articles">
       {{ range .Data.Pages.ByDate.Reverse }}
         {{ if in .Params.tags "short" }}
         <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
@@ -25,7 +25,7 @@
     </p>
   </header>
   <nav>
-    <ul id="list">
+    <ul id="long-articles">
       {{ range .Data.Pages.ByDate.Reverse }}
         {{ if in .Params.tags "short" }}
         {{ else }}

@@ -28,7 +28,7 @@ someone that didn't fully grok it either.
 
 The interface was odd, you see. For instance, when you queried for messages,
 it was something like this: "Give me 500K of messages from topic 'events',
-partition #4, starting at offset 49,031,920,381." The server would then give you
+partition #4, starting at offset 49,031,900,000." The server would then give you
 back exactly 500K worth of message data. If 500K cuts off halfway through a
 message or header, that was the client's problem.
 
