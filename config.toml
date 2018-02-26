@@ -2,10 +2,8 @@ baseURL = "https://swampcastle.org/"
 languageCode = "en-us"
 title = "Swamp Castle"
 
-[pygments]
-pygmentsuseclasses = false
-pygmentsstyle = "vs"
-PygmentsCodeFences = true
+pygmentsCodefences = true
+pygmentsStyle = "tango"
 
 [blackfriday]
 smartypants = false
