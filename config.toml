@@ -5,9 +5,6 @@ title = "Swamp Castle"
 pygmentsCodefences = true
 pygmentsStyle = "tango"
 
-[blackfriday]
-smartypants = false
-
 [outputFormats]
 [outputFormats.RSS]
 mediatype = "application/rss"
